@@ -1,4 +1,6 @@
 # vim-for-rust-tutorial
+![vim-rust2](https://user-images.githubusercontent.com/86530475/212573566-87a8b2de-a7f4-4550-97c5-0a54d6383b03.jpg)
+
 ONLY FOR MAC OS
 
 | Our recipe   | 
