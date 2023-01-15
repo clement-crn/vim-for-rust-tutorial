@@ -77,6 +77,7 @@ mkdir YouCompleteMe
 ```
 
 Then we will download the *install.py* file from YouCompleteMe github page.
+I chose to not upload here since he might be updated.
 
 https://github.com/ycm-core/YouCompleteMe#installation
 
