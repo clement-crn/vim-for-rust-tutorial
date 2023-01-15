@@ -23,7 +23,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 curl -sL install-node.vercel.app/lts | bash
 ```
 
-2-Add these lines in your ~/.vimrc.
+2-Add these lines in your .vimrc file.
 
 ```
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -41,7 +41,7 @@ cd
 ```
 vim ~/.vimrc 
 ```
-Congratulations.
+
 
 </details>
 
