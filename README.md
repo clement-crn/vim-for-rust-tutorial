@@ -20,17 +20,36 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 **Install coc.nvim**
 
-1-Install node
+Install node
 ```
 curl -sL install-node.vercel.app/lts | bash
 ```
 
-2-Add these lines in your .vimrc file.
+Add these lines in your .vimrc file
+
+Make the *autoload* folder in ~/.vim/ if you don't have one already
+
 
 ```
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+
+call plug#begin('YOURPATHTOAUTOLOAD')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+call plug#end()
 ```
+
+☝🏻 **In the *.vimrc* file do not forget to specify the path to the autoload folder**
+
+In my case, the line should be :
+
+```
+call plug#begin('~/.vim/autoload')
+```
+
+
 *Wait, how to access my vimrc file ?*
 
 <details>
@@ -38,14 +57,20 @@ In your terminal
 
 ```
 cd
-```
-
-```
 vim ~/.vimrc 
 ```
 
 
 </details>
+
+Add everything from here in your *autoload* folder:
+
+https://github.com/neoclide/coc.nvim/tree/master/autoload
+
+*reminder : it should be in*
+```
+~/.vim/autoload
+```
 
 3-Restart vim and type:
 
@@ -108,10 +133,3 @@ https://github.com/VundleVim/Vundle.vim#about
 https://github.com/ycm-core/YouCompleteMe
 
 https://cmake.org
-
-
-
-
-
-
-
