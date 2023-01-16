@@ -12,7 +12,6 @@ ONLY FOR MAC OS
 
 **Install Vim-Plug**
 
-Vim-Plug is necessary for coc.
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -72,7 +71,7 @@ https://github.com/neoclide/coc.nvim/tree/master/autoload
 ~/.vim/autoload
 ```
 
-3-Restart vim and type:
+Restart vim and type:
 
 ```
 :PlugInstall
