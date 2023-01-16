@@ -30,11 +30,11 @@ Add these lines in your .vimrc file
 Make the *autoload* folder in ~/.vim/ if you don't have one already
 
 
-```
+```vim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
-call plug#begin('YOURPATHTOAUTOLOAD')
+call plug#begin('======YOURPATHTOAUTOLOAD======') 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
